@@ -1,0 +1,51 @@
+{
+  "_meta": {
+    "filename": "blueprint.json"
+  },
+  "global_alerts": [
+    {
+      "priority": "CRITICAL",
+      "warning": "ON TOOLS: Always use pre-existing tooling configured within the project. For example, if Make is used, use `config.mk` to create custom targets to run with Make, but always prefer existing Targets if they fit the use case."
+    },
+    {
+      "priority": "CRITICAL",
+      "warning": "ON THIS DOCUMENT: You must not edit or remove any section of this blueprint that you did not create. Anything you do add, should match any pre existing example should one exist."
+    }
+  ],
+  "project_title": "<TO BE FILLED IN>",
+  "status_section": {
+    "label": "STATUS SECTION (ACTION-FOCUSED)",
+    "current_state": "not-started/in-progress/completed",
+    "update_instruction": "To provide an update, return to this 'status_section' object and modify the 'current_state'.",
+    "notes": "",
+    "architectural_deviations": [],
+    "phase_reviews": []
+  },
+  "example_task": [
+    {
+      "id": "EXAMPLE_TASK",
+      "phase": "Example Phase",
+      "title": "Example Task Title",
+      "description": "Example Task Description",
+      "status": "not-started/in-progress/completed",
+      "blockers": [
+        "ID of any tasks that must be completed before this one can be started"
+      ],
+      "completion_notes": "Notes to be added upon completion, describing what was done and any relevant details",
+      "sub_tasks": [
+        {
+          "id": "EXAMPLE_SUBTASK",
+          "title": "Example Subtask Title",
+          "description": "Example Subtask Description",
+          "status": "not-started/in-progress/completed",
+          "blockers": [
+            "ID of any subtasks that must be completed before this one can be started"
+          ],
+          "completion_notes": "Notes to be added upon completion, describing what was done and any relevant details"
+        }
+      ]
+    }
+  ],
+  "tasks": []
+}
+
