@@ -24,7 +24,7 @@ completed work in the session. It is derived from `assets/blueprint-example.json
 1. Check whether `.planning/blueprint.json` exists.
 2. If it does **not** exist, run the init script:
    ```bash
-   bash ${CLAUDE_SKILL_DIR}/scripts/new_blueprint.sh "$PWD"
+   bash ${CLAUDE_SKILL_DIR}/scripts/new_blueprint.sh "$PWD" "${CLAUDE_SKILL_DIR}"
    ```
    This copies `${CLAUDE_SKILL_DIR}/assets/blueprint-example.json` to
    `.planning/blueprint.json` in the current working directory.
